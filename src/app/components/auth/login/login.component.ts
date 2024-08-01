@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   displayText: string = 'Sign In';
+  placeholderPass: string = '********';
+  placeholderUser: string = 'Username';
   constructor() {}
 
   ngOnInit() {}
