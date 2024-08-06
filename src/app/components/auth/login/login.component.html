@@ -8,7 +8,10 @@
         >
           Username
         </label>
-        <app-input-field [placeholder]="placeholderUser"></app-input-field>
+        <app-input-field
+          [placeholder]="placeholderUser"
+          [inputType]="inputTypes ? 'text' : 'password'"
+        ></app-input-field>
       </div>
       <div class="mb-6">
         <label
@@ -17,7 +20,7 @@
         >
           Password
         </label>
-        <app-input-field [placeholder]="placeholderPass"></app-input-field>
+        <app-input-field [placeholder]="placeholderPass" [inputType]="!inputTypes ? 'text' : 'password'"></app-input-field>
       </div>
       <div class="flex items-center justify-between">
         <app-button [text]="displayText"></app-button>

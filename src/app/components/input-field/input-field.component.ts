@@ -6,4 +6,5 @@ import { Component, Input } from '@angular/core';
 })
 export class InputFieldComponent {
   @Input() placeholder!: string;
+  @Input() inputType!: string;
 }

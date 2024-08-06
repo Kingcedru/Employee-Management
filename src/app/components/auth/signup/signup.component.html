@@ -1,3 +1,33 @@
-<p>
-  signup works!
-</p>
+<div class="w-screen h-screen flex justify-center items-center">
+  <div class="w-full max-w-xs">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="username"
+        >
+          Username
+        </label>
+        <app-input-field [placeholder]="placeholderPass" [inputType]="inputTypes ? 'text' : 'password'"></app-input-field>
+      </div>
+      <div class="mb-6">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="password"
+        >
+          Password
+        </label>
+        <app-input-field [placeholder]="placeholderPass" [inputType]="!inputTypes ? 'text' : 'password'"></app-input-field>
+      </div>
+      <div class="flex items-center justify-between">
+        <app-button [text]="displayText"></app-button>
+      </div>
+      <h1
+        routerLink=""
+        class="flex justify-center align-baseline font-bold text-sm text-blue-500 mt-5 hover:text-blue-800"
+      >
+        Sign In
+      </h1>
+    </form>
+  </div>
+</div>

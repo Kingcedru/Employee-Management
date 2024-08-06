@@ -8,6 +8,7 @@ export class LoginComponent implements OnInit {
   displayText: string = 'Sign In';
   placeholderPass: string = '********';
   placeholderUser: string = 'Username';
+  inputTypes: boolean = true;
   constructor() {}
 
   ngOnInit() {}
