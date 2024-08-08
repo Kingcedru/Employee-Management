@@ -8,6 +8,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { ButtonComponent } from './components/button/button.component';
 import { InputFieldComponent } from './components/input-field/input-field.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -27,7 +28,12 @@ const routes: Routes = [
     ButtonComponent,
     InputFieldComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
