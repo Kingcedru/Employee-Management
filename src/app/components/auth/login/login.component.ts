@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { InputFieldComponent } from '../../input-field/input-field.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,11 +18,12 @@ export class LoginComponent implements OnInit {
 
   loginForm!: NgForm;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
   onSubmit(loginForm: NgForm) {
-    console.log(this.username.value, this.password.value);
+    if(!this.username.value || !this.password.value) return
+    this.router.navigate(['/employees'])
   }
 }

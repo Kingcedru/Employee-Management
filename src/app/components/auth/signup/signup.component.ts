@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { InputFieldComponent } from '../../input-field/input-field.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -17,13 +18,12 @@ export class SignupComponent implements OnInit {
   @ViewChild('password') password!: InputFieldComponent;
   @ViewChild('repassword') repassword!: InputFieldComponent;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
   onSubmit(signupForm: NgForm) {
-    console.log(this.username.value);
-    console.log(this.password.value);
-    console.log(this.repassword.value);
+    if (!this.username.value || !this.password.value) return;
+    this.router.navigate(['/employees']);
   }
 }
