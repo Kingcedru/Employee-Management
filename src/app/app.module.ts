@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SideMenuComponent } from './components/pages/side-menu/side-menu.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { ProductsComponent } from './components/pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LayoutComponent } from './components/layout/layout.component';
     InputFieldComponent,
     SideMenuComponent,
     LayoutComponent,
+    ProductsComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, FormsModule, HttpClientModule],
   providers: [],
