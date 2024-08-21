@@ -9,6 +9,8 @@ import { InputFieldComponent } from './components/input-field/input-field.compon
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SideMenuComponent } from './components/pages/side-menu/side-menu.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignupComponent,
     ButtonComponent,
     InputFieldComponent,
+    SideMenuComponent,
+    LayoutComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, FormsModule, HttpClientModule],
   providers: [],

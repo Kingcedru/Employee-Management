@@ -24,6 +24,6 @@ export class SignupComponent implements OnInit {
 
   onSubmit(signupForm: NgForm) {
     if (!this.username.value || !this.password.value) return;
-    this.router.navigate(['/employees']);
+    this.router.navigate(['/dashboard']);
   }
 }
